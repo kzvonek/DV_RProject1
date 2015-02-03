@@ -1,1 +1,1 @@
-ggplot(dfjoined, aes(x=ORDER_DATE, y=SHIPPED_DATE, color=TITLE)) + geom_point()+ facet_wrap(~CUSTOMER_STATE)
+title <- ggplot(dfjoined, aes(x=ORDER_DATE, y=SHIPPED_DATE, color=TITLE)) + geom_point()+ facet_wrap(~CUSTOMER_STATE)
