@@ -9,6 +9,17 @@ Kaylyn Zvonek
 
 The source functions below call the R code to reproduce the dataframes and plots we made for this project.
 
+```{r, echo=FALSE}
+library("ggplot2", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("gplots", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("bitops", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("knitr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("plyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("RCurl", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("reshape2", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+
+```
+
 ```{r, echo=TRUE}
 source("../01 Data/dataFrames.R")
 source("../02 Visualizations/ggplot_customers.R")
