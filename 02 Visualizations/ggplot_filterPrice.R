@@ -1,1 +1,1 @@
-price <- ggplot(dfjoined, aes(x=ORDER_DATE, y=SHIPPED_DATE, color= factor(UNIT_PRICE))) + geom_point()+ facet_wrap(~CUSTOMER_STATE)
+price <- ggplot(dfjoined, aes(x=as.Date(ORDER_DATE, "%Y-%m-%d"), y=as.Date(SHIPPED_DATE, "%Y-%m-%d"), color= factor(UNIT_PRICE))) + geom_point()+ facet_wrap(~CUSTOMER_STATE)
