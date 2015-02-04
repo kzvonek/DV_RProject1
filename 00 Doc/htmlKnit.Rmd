@@ -1,11 +1,13 @@
 ---
-title: "Data Plots"
+title: "Data Visualization R Project 1"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Natasha Halfin
+Evan Johnston
+Kaylyn Zvonek
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The source functions below call the R code to reproduce the dataframes and plots we made for this project.
 
 ```{r, echo=TRUE}
 source("../01 Data/dataFrames.R")
@@ -20,16 +22,64 @@ source("../02 Visualizations/ggplot_orders.R")
 
 ```
 
-You can also embed plots, for example:
+Customer Table Dataframe
 
-```{r, echo=FALSE}
+```{r, echo=TRUE}
+
+data.frame(head(dfcustomer))
+```
+Order Table Dataframe
+```{r, echo=TRUE}
+data.frame(head(dforder))
+```
+
+Order Details Table Dataframe
+```{r, echo=TRUE}
+data.frame(head(dforderdetail))
+```
+
+Item Table Dataframe
+```{r, echo=TRUE}
+data.frame(head(dfitem))
+```
+
+Joined Table Dataframe
+```{r, echo=TRUE}
+data.frame(head(dfjoined))
+```
+
+*Interesting Plots*  
+**Customers**
+This plot depicts the number of customers by state.
+```{r, echo= TRUE}
 plot(customers)
-plot(items)
+```
+
+**Order Details**
+This plot indicates the quantity of types of items across orders details.
+```{r, echo=TRUE}
 plot(order_details)
+```
+
+**Orders**  
+This plot displays the types of items ordered by each customer over a period of time.
+```{r, echo=TRUE}
+
 plot(orders)
+```
+
+**Items**
+This plot shows the price distribution of items across different artists.
+```{r, echo=TRUE}
+plot(items)
+```
+
+**Required Plots from Joined Dataframes**
+```{r, echo=TRUE}
 plot(artist)
 plot(price)
 plot(title)
+
 
 ```
 
